@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI LOTO ROYAL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="flashLayer"></div>
+<!-- カットイン演出 -->
+<div id="cutin">
+    <div class="cutin-inner">
+        <div id="cutinTitle">
+            ⚠ WARNING ⚠
+        </div>
+        <div id="cutinSub">
+            激熱演出発生
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1>
+        MINI LOTO ROYAL
+    </h1>
+    <div class="fortune-box">
+        <p class="fortune-guide">
+            あなたの運勢を占うため、生年月日を入力してください
+        </p>
+        <input
+            type="date"
+            id="birthdate"
+        >
+        <button
+            class="fortune-btn"
+            onclick="showFortune()"
+        >
+            運勢を見る
+        </button>
+        <p id="fortune"></p>
+    </div>
+    <!-- カウントダウン -->
+    <div id="countdown"></div>
+    <!-- 幸運メッセージ -->
+    <div id="specialMessage"></div>
+    <!-- 抽選ボール -->
+    <div class="balls">
+        <div class="ball" id="n1">?</div>
+        <div class="ball" id="n2">?</div>
+        <div class="ball" id="n3">?</div>
+        <div class="ball" id="n4">?</div>
+        <div class="ball" id="n5">?</div>
+    </div>
+    <!-- 状態表示 -->
+    <div id="statusText">
+        STARTを押して運試し！
+    </div>
+    <!-- スタート -->
+    <button
+        id="startBtn"
+        onclick="startLottery()"
+    >
+        START
+    </button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
